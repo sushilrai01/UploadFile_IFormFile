@@ -13,7 +13,7 @@ namespace UploadFileIForm.Controllers
         }
 
         //POST: Upload/Upload //Upload Single File
-        [HttpPost]
+        
         public IActionResult Upload(SingleFileModel model)
         {
             if (ModelState.IsValid)
@@ -60,7 +60,7 @@ namespace UploadFileIForm.Controllers
                     foreach (var file in model.Files)
                     {
 
-                        string path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/Files");
+                        string path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/Files/multi");
 
                         //create folder if not exist
                         if (!Directory.Exists(path))
