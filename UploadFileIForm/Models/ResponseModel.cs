@@ -18,7 +18,7 @@ namespace UploadFileIForm.Models
     }
     public class MultipleFilesModel : ResponseModel
     {
-        [Required(ErrorMessage = "Please select files")]
+        [Required(ErrorMessage = "Please select xfiles")]
         public List<IFormFile> Files { get; set; }
     }
 }
